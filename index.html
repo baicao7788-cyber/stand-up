@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="起来走走">
+<meta name="theme-color" content="#f6f3ee">
+<meta name="description" content="给久坐的电脑工作者：上班时间坐满一段就提醒你起来动 2 分钟。">
+<title>起来走走 · 久坐提醒</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" href="icon-180.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div>
+    <div class="brand">起来走走</div>
+    <div id="sub" class="sub"></div>
+  </div>
+  <button id="btnSettings" class="icon-btn" aria-label="设置">设置</button>
+</header>
+
+<main id="view"></main>
+
+<div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+  <div class="sheet" id="sheet"></div>
+</div>
+<div id="toast" class="toast hidden"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
